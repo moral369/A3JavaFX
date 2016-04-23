@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<AnchorPane fx:controller="drill.controller.SmishingTabController"
+            fx:id="ransomMain"
+            maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="900.0" prefWidth="1600.0"
+            xmlns:fx="http://javafx.com/fxml"
+            xmlns="http://javafx.com/javafx/8" >
+
+    <children>
+
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="900.0" prefWidth="1600.0"
+                        AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+                <children>
+                    <VBox prefHeight="900.0" prefWidth="1600.0"
+                          AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+                        <children>
+
+                            <GridPane prefHeight="750.0"
+                                      AnchorPane.topAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                      stylesheets="@../css/DrilldownChart.css">
+
+                                <gridLinesVisible>true</gridLinesVisible> <!--display the grid lines for debugging -->
+
+                                <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+
+                                <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+
+                                <children>
+                                    <AnchorPane prefHeight="250" prefWidth="400"
+                                                GridPane.rowIndex="0" GridPane.columnIndex="0">
+                                        <children>
+                                            <PieChart fx:id="main_pie_metrix00" prefHeight="200.0" prefWidth="200.0"
+                                                  AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                                  AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"
+                                                  onMouseClicked = "#OnMouseClicked_00"/>
+
+                                        </children>
+                                    </AnchorPane>
+
+                                    <AnchorPane prefHeight="250" prefWidth="400"
+                                                GridPane.rowIndex="0" GridPane.columnIndex="1">
+                                        <children>
+                                            <PieChart fx:id="main_pie_metrix01" prefHeight="200.0" prefWidth="200.0"
+                                                      AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                                      AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"
+                                                      onMouseClicked = "#OnMouseClicked_01"/>
+                                        </children>
+                                    </AnchorPane>
+
+                                    <AnchorPane prefHeight="250" prefWidth="400"
+                                                GridPane.rowIndex="0" GridPane.columnIndex="2">
+                                        <children>
+                                            <PieChart fx:id="main_pie_metrix02"
+                                                      prefHeight="200.0" prefWidth="200.0"
+                                                      AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                                      AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"
+                                                      onMouseClicked = "#OnMouseClicked_02"/>
+                                        </children>
+                                    </AnchorPane>
+
+
+                                    <AnchorPane prefHeight="250" prefWidth="400"
+                                                GridPane.rowIndex="0" GridPane.columnIndex="3">
+                                        <children>
+                                            <PieChart fx:id="main_pie_metrix03" prefHeight="200.0" prefWidth="200.0"
+                                                      AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                                      AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"
+                                                      onMouseClicked = "#OnMouseClicked_03"/>
+                                        </children>
+                                    </AnchorPane>
+
+                                    <AnchorPane prefHeight="250" prefWidth="400"
+                                                GridPane.rowIndex="1" GridPane.columnIndex="0">
+                                        <children>
+                                            <PieChart fx:id="main_pie_metrix10" prefHeight="200.0" prefWidth="200.0"
+                                                      AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                                      AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"
+                                                      onMouseClicked = "#OnMouseClicked_10"/>
+                                        </children>
+                                    </AnchorPane>
+
+                                    <AnchorPane prefHeight="250" prefWidth="400"
+                                                GridPane.rowIndex="1" GridPane.columnIndex="1">
+                                        <children>
+                                            <PieChart fx:id="main_pie_metrix11" prefHeight="200.0" prefWidth="200.0"
+                                                      AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                                      AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"
+                                                      onMouseClicked = "#OnMouseClicked_11"/>
+                                        </children>
+                                    </AnchorPane>
+
+                                    <AnchorPane prefHeight="250" prefWidth="400"
+                                                GridPane.rowIndex="1" GridPane.columnIndex="2">
+                                        <children>
+                                            <PieChart fx:id="main_pie_metrix12"
+                                                      layoutX="6.0"
+                                                      prefHeight="200.0" prefWidth="200.0"
+                                                      AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                                      AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"
+                                                      onMouseClicked = "#OnMouseClicked_12"/>
+                                        </children>
+                                    </AnchorPane>
+
+                                    <AnchorPane prefHeight="250" prefWidth="400"
+                                                GridPane.rowIndex="1" GridPane.columnIndex="3">
+                                        <children>
+                                            <PieChart fx:id="main_pie_metrix13" layoutY="6.0"
+                                                      prefHeight="200.0" prefWidth="200.0"
+                                                      AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                                      AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"
+                                                      onMouseClicked = "#OnMouseClicked_13"/>
+                                        </children>
+                                    </AnchorPane>
+
+                                    <AnchorPane prefHeight="250" prefWidth="400"
+                                                GridPane.rowIndex="2" GridPane.columnIndex="0">
+                                        <children>
+                                            <PieChart fx:id="main_pie_metrix20"
+                                                      prefHeight="200.0" prefWidth="200.0"
+                                                      AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                                      AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"
+                                                      onMouseClicked = "#OnMouseClicked_20"/>
+                                        </children>
+                                    </AnchorPane>
+
+                                    <AnchorPane prefHeight="250" prefWidth="400"
+                                                GridPane.rowIndex="2" GridPane.columnIndex="1">
+                                        <children>
+                                            <PieChart fx:id="main_pie_metrix21"
+                                                      prefHeight="200.0" prefWidth="200.0"
+                                                      AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                                      AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"
+                                                      onMouseClicked = "#OnMouseClicked_21"/>
+                                        </children>
+                                    </AnchorPane>
+
+                                    <AnchorPane prefHeight="250" prefWidth="400"
+                                                GridPane.rowIndex="2" GridPane.columnIndex="2">
+                                        <children>
+                                            <PieChart fx:id="main_pie_metrix22"
+                                                      prefHeight="200.0" prefWidth="200.0"
+                                                      AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                                      AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"
+                                                      onMouseClicked = "#OnMouseClicked_22"/>
+                                        </children>
+                                    </AnchorPane>
+
+                                    <AnchorPane prefHeight="250" prefWidth="400"
+                                                GridPane.rowIndex="2" GridPane.columnIndex="3">
+                                        <children>
+                                            <PieChart fx:id="main_pie_metrix23"
+                                                      prefHeight="200.0" prefWidth="200.0"
+                                                      AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                                      AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"
+                                                      onMouseClicked = "#OnMouseClicked_23"/>
+                                        </children>
+                                    </AnchorPane>
+                                </children>
+                            </GridPane>
+
+
+
+                        </children>
+
+                        <AnchorPane prefHeight="150.0" prefWidth="1600.0">
+                            <children>
+                                <ListView fx:id="listviewtemp" prefHeight="201.0" prefWidth="1920.0"
+                                          AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" />
+                            </children>
+                        </AnchorPane>
+
+                    </VBox>
+
+                </children>
+            </AnchorPane>
+
+    </children>
+
+</AnchorPane>
